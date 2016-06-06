@@ -14,7 +14,7 @@ WORKDIR /go/src/github.com/xindong/corvus
 RUN git submodule update --init
 RUN make deps
 RUN make
-RUN cp corvus /go/bin/
+RUN cp /go/src/github.com/xindong/corvus/src/corvus /go/bin/
 RUN rm -rf /go/src/*
 
 WORKDIR /go/bin
